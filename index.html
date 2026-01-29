@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wisata Alam dan Religi Sendang Joholanang - Peninggalan Sunan Kalijaga dengan air jernih alami.">
+    <title>Wisata Sendang Joholanang</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Sendang Joholanang</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" onclick="toggleMenu()">Beranda</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Tentang</a></li>
+            <li><a href="#facilities" onclick="toggleMenu()">Fasilitas</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()">Galeri</a></li>
+            <li><a href="#location" onclick="toggleMenu()">Lokasi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <h1>Pesona Alam & Sejarah</h1>
+        <p>Menikmati kejernihan air alami di Sendang Joholanang, warisan sejarah Sunan Kalijaga.</p>
+        <a href="#about" class="btn">Jelajahi Sekarang</a>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-title">
+            <h2>Tentang Wisata</h2>
+            <span></span>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="assets/sendang10.jpg" alt="Suasana Alam Sendang">
+            </div>
+            <div class="about-text">
+                <h3>Warisan Sejarah & Keasrian Alam</h3>
+                <p>Sendang Joholanang terletak di perbatasan antara Sindumartani (Sleman) dan Manisrenggo (Klaten). Tempat ini diyakini sebagai petilasan <strong>Sunan Kalijaga</strong> saat menyebarkan agama Islam.</p>
+                <br>
+                <p>Nama "Joholanang" berasal dari jernihnya air ("Joho" atau Jernih) dan kisah sejarahnya ("Lanang" atau Laki-laki). Selain memiliki nilai spiritual, sendang ini menawarkan suasana yang sejuk dengan pohon beringin besar yang menaungi kolam alami.</p>
+                <br>
+                <ul style="list-style: disc; margin-left: 20px;">
+                    <li>Air jernih langsung dari mata air.</li>
+                    <li>Tempat meditasi dan wisata religi.</li>
+                    <li>Udara sejuk khas pedesaan.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section id="facilities" style="background-color: #eefcf4;">
+        <div class="section-title">
+            <h2>Fasilitas</h2>
+            <span></span>
+        </div>
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <i class="fas fa-swimming-pool"></i>
+                <h3>Kolam Pemandian</h3>
+                <p>Terdapat kolam pemandian alami yang terpisah untuk pria dan wanita dengan air yang menyegarkan.</p>
+            </div>
+            <div class="facility-card">
+                <i class="fas fa-mosque"></i>
+                <h3>Area Ibadah</h3>
+                <p>Dekat dengan fasilitas masjid/mushola untuk memudahkan pengunjung beribadah.</p>
+            </div>
+            <div class="facility-card">
+                <i class="fas fa-tree"></i>
+                <h3>Area Santai</h3>
+                <p>Banyak pepohonan rindang termasuk Pohon Beringin tua yang membuat suasana asri untuk bersantai.</p>
+            </div>
+            <div class="facility-card">
+                <i class="fas fa-parking"></i>
+                <h3>Area Parkir</h3>
+                <p>Tersedia area parkir yang cukup untuk kendaraan roda dua maupun roda empat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Galeri Foto</h2>
+            <span></span>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1533230685960-96696fa28659?auto=format&fit=crop&w=600&q=80" alt="Galeri 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Galeri 2"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" alt="Galeri 3"></div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+        <div class="section-title">
+            <h2>Lokasi & Kontak</h2>
+            <span></span>
+        </div>
+        <div class="contact-container">
+            <div class="map-box">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9131310072507!2d110.4780031756105!3d-7.692471776174553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5c8ea63a9085%3A0x6ddac2398b2d0df5!2sSendang%20Joholanang!5e0!3m2!1sen!2sid!4v1767145229258!5m2!1sen!2sid" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="info-box">
+                <h3>Informasi Kunjungan</h3>
+                <br>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Alamat:</strong><br>Dusun Joholanang, Sindumartani, Kec. Ngemplak, Kabupaten Sleman, Daerah Istimewa Yogyakarta.</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p><strong>Jam Buka:</strong><br>08.00 - 17.00 WIB (Buka Setiap Hari)</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-ticket-alt"></i>
+                    <p><strong>Tiket Masuk:</strong><br>Sukarela / Parkir Seikhlasnya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wisata Sendang Joholanang.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
