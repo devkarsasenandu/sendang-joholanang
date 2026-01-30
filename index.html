@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wisata Alam dan Religi Sendang Joholanang - Peninggalan Sunan Kalijaga dengan air jernih alami.">
-    <title>Wisata Sendang Joholanang</title>
+    <title>Sendang Joholanang</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,129 +15,176 @@
 
     <!-- Navbar -->
     <nav>
-        <div class="logo">Sendang Joholanang</div>
+        <div class="logo">🌿 Sendang Joholanang</div>
         <div class="hamburger" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
-            <li><a href="#home" onclick="toggleMenu()">Beranda</a></li>
-            <li><a href="#about" onclick="toggleMenu()">Tentang</a></li>
-            <li><a href="#facilities" onclick="toggleMenu()">Fasilitas</a></li>
-            <li><a href="#gallery" onclick="toggleMenu()">Galeri</a></li>
-            <li><a href="#location" onclick="toggleMenu()">Lokasi</a></li>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#legend">Legenda</a></li>
+            <li><a href="#explore">Jelajah</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#location">Lokasi</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header id="home">
-        <h1>Pesona Alam & Sejarah</h1>
-        <p>Menikmati kejernihan air alami di Sendang Joholanang, warisan sejarah Sunan Kalijaga.</p>
-        <a href="#about" class="btn">Jelajahi Sekarang</a>
+        <div class="hero-overlay"></div>
+        <div class="hero-content hidden-el">
+            <h1>Pesona Alam & Sejarah</h1>
+            <p>Menikmati kejernihan air alami di Sendang Joholanang, warisan sejarah Sunan Kalijaga.</p>
+            <a href="#legend" class="btn-cta">Jelajahi Sekarang </a>
+        </div>
+        
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
     </header>
 
-    <!-- About -->
-    <section id="about">
-        <div class="section-title">
-            <h2>Tentang Wisata</h2>
-            <span></span>
-        </div>
-        <div class="about-container">
-            <div class="about-img">
-                <img src="assets/sendang10.jpg" alt="Suasana Alam Sendang">
+    <!-- Legend -->
+    <section id="legend">
+        <div class="container big-container">
+            <div class="section-header hidden-el">
+                <h2>Sejarah Wisata</h2>
+                <span></span>
             </div>
-            <div class="about-text">
-                <h3>Warisan Sejarah & Keasrian Alam</h3>
-                <p>Sendang Joholanang terletak di perbatasan antara Sindumartani (Sleman) dan Manisrenggo (Klaten). Tempat ini diyakini sebagai petilasan <strong>Sunan Kalijaga</strong> saat menyebarkan agama Islam.</p>
-                <br>
-                <p>Nama "Joholanang" berasal dari jernihnya air ("Joho" atau Jernih) dan kisah sejarahnya ("Lanang" atau Laki-laki). Selain memiliki nilai spiritual, sendang ini menawarkan suasana yang sejuk dengan pohon beringin besar yang menaungi kolam alami.</p>
-                <br>
-                <ul style="list-style: disc; margin-left: 20px;">
-                    <li>Air jernih langsung dari mata air.</li>
-                    <li>Tempat meditasi dan wisata religi.</li>
-                    <li>Udara sejuk khas pedesaan.</li>
-                </ul>
+            
+            <div class="legend-box hidden-el">
+                <div class="legend-img">
+                    <img src="assets/sendang10.webp" alt="Sendang Joholanang">
+                </div>
+                <div class="legend-content">
+                    
+                    <div class="story-text">
+                        <p>Konon, saat <strong>Sunan Kalijaga</strong> sedang melakukan syiar dan singgah di daerah ini, tempat ini masih berupa hutan yang tandus. Ketika hendak melaksanakan salat, beliau tidak menemukan air untuk berwudhu.</p>
+                        <p>Atas kehendak Allah dan karomah beliau, Sunan Kalijaga menancapkan tongkatnya ke tanah. Seketika itu, memancarlah mata air jernih yang menjadi cikal bakal <strong>Sendang Joholanang</strong>.</p>
+                        <p>Hingga kini, mata air ini tidak pernah kering dan dimanfaatkan warga untuk kehidupan sehari-hari serta kegiatan spiritual.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Facilities -->
-    <section id="facilities" style="background-color: #eefcf4;">
-        <div class="section-title">
-            <h2>Fasilitas</h2>
-            <span></span>
+    <!-- Explore Cards -->
+    <section id="explore">
+        <div class="wave-top">
+            <svg viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
         </div>
-        <div class="facilities-grid">
-            <div class="facility-card">
-                <i class="fas fa-swimming-pool"></i>
-                <h3>Kolam Pemandian</h3>
-                <p>Terdapat kolam pemandian alami yang terpisah untuk pria dan wanita dengan air yang menyegarkan.</p>
+
+        <div class="container">
+            <div class="section-header hidden-el">
+                <h2>Apa yang Dapat Dilakukan</h2>
+                <span></span>
             </div>
-            <div class="facility-card">
-                <i class="fas fa-mosque"></i>
-                <h3>Area Ibadah</h3>
-                <p>Dekat dengan fasilitas masjid/mushola untuk memudahkan pengunjung beribadah.</p>
-            </div>
-            <div class="facility-card">
-                <i class="fas fa-tree"></i>
-                <h3>Area Santai</h3>
-                <p>Banyak pepohonan rindang termasuk Pohon Beringin tua yang membuat suasana asri untuk bersantai.</p>
-            </div>
-            <div class="facility-card">
-                <i class="fas fa-parking"></i>
-                <h3>Area Parkir</h3>
-                <p>Tersedia area parkir yang cukup untuk kendaraan roda dua maupun roda empat.</p>
+            
+            <div class="cards-grid">
+                <div class="fun-card hidden-el">
+                    <div class="icon-circle pop-blue"><i class="fas fa-water"></i></div>
+                    <h3>Berendam</h3>
+                    <p>Air sendang yang jernih dan segar tersedia dalam kolam terpisah bagi laki-laki dan perempuan.</p>
+                </div>
+                <div class="fun-card hidden-el">
+                    <div class="icon-circle pop-green"><i class="fas fa-tree"></i></div>
+                    <h3>Relaksasi Alam</h3>
+                    <p>Pengunjung dapat beristirahat dan menikmati suasana teduh di bawah pohon beringin yang rindang.</p>
+                </div>
+                <div class="fun-card hidden-el">
+                    <div class="icon-circle pop-orange"><i class="fas fa-camera"></i></div>
+                    <h3>Fotografi</h3>
+                    <p>Lingkungan yang asri menawarkan berbagai sudut menarik untuk dokumentasi visual.</p>
+                </div>
+                <div class="fun-card hidden-el">
+                    <div class="icon-circle pop-purple"><i class="fas fa-landmark"></i></div>
+                    <h3>Wisata Sejarah</h3>
+                    <p>Mengenal latar belakang historis Sendang Joholanang sebagai situs mata air tua yang hidup dalam tradisi dan kisah lokal.</p>
+                </div>
             </div>
         </div>
+
+        <div class="wave-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L34.3,149.3C68.6,171,137,213,206,224C274.3,235,343,213,411,186.7C480,160,549,128,617,106.7C685.7,85,754,75,823,112C891.4,149,960,235,1029,256C1097.1,277,1166,235,1234,192C1302.9,149,1371,107,1406,85.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </div>
+        
     </section>
 
     <!-- Gallery -->
     <section id="gallery">
-        <div class="section-title">
-            <h2>Galeri Foto</h2>
-            <span></span>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1533230685960-96696fa28659?auto=format&fit=crop&w=600&q=80" alt="Galeri 1"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Galeri 2"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" alt="Galeri 3"></div>
+        <div class="container">
+            <div class="section-header hidden-el">
+                <h2>Galeri Foto</h2>
+                <span></span>
+            </div>
+            
+            <div class="gallery-grid hidden-el">
+                <div class="gallery-item item-1">
+                    <img src="assets/sendang11.webp" alt="Sendang">
+                    <div class="overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item item-2">
+                    <img src="assets/sendang9.webp" alt="...">
+                    <div class="overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item item-3">
+                    <img src="assets/sendang4.webp" alt="Hutan">
+                    <div class="overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item item-4">
+                    <img src="assets/sendang3.webp" alt="Air Jernih">
+                    <div class="overlay"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Location -->
     <section id="location">
-        <div class="section-title">
-            <h2>Lokasi & Kontak</h2>
-            <span></span>
+        <div class="wave-divider-top">
+            <svg viewBox="0 0 1440 320"><path fill="#f9fbfd" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,160C960,139,1056,149,1152,160C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
         </div>
-        <div class="contact-container">
-            <div class="map-box">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9131310072507!2d110.4780031756105!3d-7.692471776174553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5c8ea63a9085%3A0x6ddac2398b2d0df5!2sSendang%20Joholanang!5e0!3m2!1sen!2sid!4v1767145229258!5m2!1sen!2sid" 
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+
+        <div class="container">
+            <div class="section-header hidden-el">
+                <h2>Informasi Kunjungan</h2>
+                <p>Lokasi mudah diakses dengan area parkir yang memadai.</p>
             </div>
-            <div class="info-box">
-                <h3>Informasi Kunjungan</h3>
-                <br>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p><strong>Alamat:</strong><br>Dusun Joholanang, Sindumartani, Kec. Ngemplak, Kabupaten Sleman, Daerah Istimewa Yogyakarta.</p>
+            
+            <div class="loc-wrapper hidden-el">
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9131310072507!2d110.4780031756105!3d-7.692471776174553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5c8ea63a9085%3A0x6ddac2398b2d0df5!2sSendang%20Joholanang!5e0!3m2!1sen!2sid!4v1767145229258!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-clock"></i>
-                    <p><strong>Jam Buka:</strong><br>08.00 - 17.00 WIB (Buka Setiap Hari)</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-ticket-alt"></i>
-                    <p><strong>Tiket Masuk:</strong><br>Sukarela / Parkir Seikhlasnya</p>
+                <div class="loc-details">
+                    <div class="detail-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Dusun Joholanang, Desa Sindumartani, Kec. Ngemplak, Kab. Sleman, Daerah Istimewa Yogyakarta.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Buka</h4>
+                            <p>Terbuka 24 jam.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wallet"></i>
+                        <div>
+                            <h4>Tiket Masuk</h4>
+                            <p>Tidak dipungut biaya.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Wisata Sendang Joholanang.</p>
+        <p>KKN-PPM UGM Periode 4 Tahun 2025/2026 <strong>Karsa Senandu</strong></p>
+        <p class="copyright">&copy; 2026 Sendang Joholanang</p>
     </footer>
 
     <script src="script.js"></script>
